@@ -2,14 +2,20 @@ package com.recipeRumble.game;
 
 import java.util.Scanner;
 
+import com.recipeRumble.game.locations.Forest;
+import com.recipeRumble.game.locations.Location;
+import com.recipeRumble.game.locations.LocationMap;
+
 public class Game {
     private boolean isRunning;
     private Player player;
     private Location currentLocation;
+    private LocationMap locationMap;
 
     public Game() {
         this.player = new Player("Player1");
-        this.currentLocation = new Location("Kitchen", "A place where delicious meals are made.");
+        this.locationMap = new LocationMap();
+        this.currentLocation = locationMap.getLocation("kitchen");
     }
 
     public void start() {
@@ -23,6 +29,7 @@ public class Game {
             String input = scanner.nextLine(); // Read user input
             handleCommand(input); // Process the user input
         }
+        scanner.close();
     }
 
     private void handleCommand(String command) {
@@ -30,6 +37,15 @@ public class Game {
             this.quit();
         } else if (command.equals("look")) {
             this.look();
+        } else if (command.startsWith("move to ")) {
+            this.moveTo(command.substring(8));
+        } else if (command.equals("search") && this.currentLocation == locationMap.getLocation("forest")) {
+            if (this.currentLocation instanceof Forest) {
+                Forest forest = (Forest) this.currentLocation;
+                forest.searchForest();
+            } else {
+                System.out.println("You can't search here.");
+            }
         } else {
             System.out.println("Unknown command.");
         }
@@ -46,16 +62,32 @@ public class Game {
         printWithDelay("Thank you for playing Recipe Rumble!");
     }
 
+    private void moveTo(String destination) {
+        if (this.locationMap.containsLocation(destination)) {
+            this.currentLocation = locationMap.getLocation(destination);
+            printWithDelay("You are now at the " + currentLocation.getName());
+            delay(200);
+            printWithDelay(currentLocation.getDescription());
+        } else {
+            printWithDelay("That location doesn't exist. The locations currently accessible are:\n"
+                    + locationMap.listLocations());
+        }
+    }
+
     private void printWithDelay(String text) {
         for (char c : text.toCharArray()) {
             System.out.print(c); // Print each character
-            try {
-                Thread.sleep(10); // Delay for 50 milliseconds
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt(); // Handle the interruption
-            }
+            delay(10);
         }
+        delay(400);
         System.out.println(); // Move to the next line after the text is printed
     }
 
+    private void delay(long milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt(); // Restore the interrupted status
+        }
+    }
 }
