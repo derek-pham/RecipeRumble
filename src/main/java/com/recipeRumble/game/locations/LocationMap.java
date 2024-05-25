@@ -14,9 +14,10 @@ public class LocationMap {
 
     // Method to initialize all possible locations
     private void initializeLocations() {
-        locations.put("kitchen", new Location("Kitchen", "A place where delicious meals are made."));
+        locations.put("kitchen", new Kitchen());
         locations.put("forest", new Forest());
-        locations.put("mountain", new Location("Mountain", "A tall mountain with a breathtaking view."));
+        locations.put("mountain", new Mountains());
+        locations.put("dining hall", new DiningHall());
         // Add more locations as needed
     }
 

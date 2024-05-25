@@ -5,7 +5,6 @@ public class PurpleMaitake extends FoodItem {
 
     public PurpleMaitake() {
         super("Purple Maitake",
-                "Its vibrant purple hue and unique fan-like structure make it a sought-after ingredient for alchemists and chefs alike.",
-                80);
+                "Its vibrant purple hue and unique fan-like structure make it a sought-after ingredient for alchemists and chefs alike.");
     }
 }
