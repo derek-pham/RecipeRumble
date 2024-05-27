@@ -24,7 +24,7 @@ public class Game {
     public void start() {
         isRunning = true;
         Scanner scanner = new Scanner(System.in); // Create a Scanner object to read user input
-//        introDialogue();
+       introDialogue();
         PrintUtils.printWithDelay("What will you do now?");
         PrintUtils.printWithDelay("Commands: -look -move to [forest, mountain, dining hall, kitchen] -search -take xxx -check inventory -cook -serve -quit");
         // Main game loop
