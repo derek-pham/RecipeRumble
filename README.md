@@ -39,14 +39,20 @@ Below are AI image interpretations of what the game ingredients might look like.
 
 **DISCLAIMER**  Please not that the images included in this project are generated using artificial intelligence (AI). AI-generated images are for illustrative purposes only.
 
-### Cherry Beet
-<img src="src\main\java\com\recipeRumble\readme-assets\cherrybeet.jpg" alt="Cherry Beet" width="300"/>
-
 ### Cucu Berry
-<img src="src\main\java\com\recipeRumble\readme-assets\cucuberry.jpg" alt="Cucu Berry" width="300"/>
+<img src="src\main\java\com\recipeRumble\readme-assets\cucuberry.jpg" alt="Cucu Berry" width="300" style="border-radius: 5px;"/>
 
-### Pyrus Bulb
-<img src="src\main\java\com\recipeRumble\readme-assets\pyrusbulb.jpg" alt="Pyrus Bulb" width="300"/>
+### Green Anise
+<img src="src\main\java\com\recipeRumble\readme-assets\greenanise.png" alt="Green Anise" width="300" style="border-radius: 5px;"/>
+
+### Purple Maitake
+<img src="src\main\java\com\recipeRumble\readme-assets\purplemaitake.png" alt="Purple Maitake" width="300" style="border-radius: 5px;"/>
 
 ### Wild Carota
-<img src="src\main\java\com\recipeRumble\readme-assets\wildcarota.jpg" alt="Wild Carota" width="300"/>
+<img src="src\main\java\com\recipeRumble\readme-assets\wildcarota.jpg" alt="Wild Carota" width="300" style="border-radius: 5px;"/>
+
+### Cherry Beet
+<img src="src\main\java\com\recipeRumble\readme-assets\cherrybeet.jpg" alt="Cherry Beet" width="300" style="border-radius: 5px;"/>
+
+### Pyrus Bulb
+<img src="src\main\java\com\recipeRumble\readme-assets\pyrusbulb.jpg" alt="Pyrus Bulb" width="300" style="border-radius: 5px;"/>
