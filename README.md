@@ -8,7 +8,7 @@
   - [Forking Repository](#forking-repository)
 
 ### Background
-RecipeRumble is a text adventure game where the player must impress Lord Reginald Fairfax and cook up a dish that will satisfy this tastebuds. The player must *search* through different environments for different and unique ingredients. They will *cook* and engage in culinary experimentation to master their cooking skills. From there they must *serve* Lord Reginald Fairfax in the *Dining hall* in hopes of succeeding and impressing him.
+RecipeRumble is a text adventure game where the player must impress Lord Reginald Fairfax and cook up a dish that will satisfy his tastebuds. The player must *search* through different environments for different and unique ingredients. They will *cook* and engage in culinary experimentation to master their cooking skills. From there they must *serve* Lord Reginald Fairfax in the *Dining hall* in hopes of succeeding and impressing him.
 
 ### Inspiration and concept
 The inspiration behind the design and concept of RecipeRumble is based on the game called Battle Chef Brigade. The world of Battle Chef Brigade centers around chefs who using monster parts and unique flora as part of their cooking in tournaments.
