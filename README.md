@@ -1,55 +1,52 @@
-# Recipe Rumble: A Text Adventure
-Java based text-adventure game
+# RecipeRumble: A Text Adventure
 
-javac -d bin src/main/java/com/recipeRumble/*.java src/main/java/com/recipeRumble/game/*.java src/main/java/com/recipeRumble/game/locations/*.java src/main/java/com/recipeRumble/game/foods/ingredients/*.java src/main/java/com/recipeRumble/game/utils/*.java
+## Table of Contents
+- [RecipeRumble](#reciperumble-a-text-adventure)
+- [Background](#background)
+- [Inspiration and concept](#inspiration-and-concept)
+- [Usage](#usage)
+  - [Forking Repository](#forking-repository)
 
-java -cp bin com.recipeRumble.Main 
+### Background
+RecipeRumble is a text adventure game where the player must impress Lord Reginald Fairfax and cook up a dish that will satisfy this tastebuds. The player must *search* through different environments for different and unique ingredients. They will *cook* and engage in culinary experimentation to master their cooking skills. From there they must *serve* Lord Reginald Fairfax in the *Dining hall* in hopes of succeeding and impressing him.
 
-TODO:
-- FIX: you can indefinitely grab an item and add it to inventory
-- inventory should do a check first if it is full
-- add search method to location to location and override it in subclasses
+### Inspiration and concept
+The inspiration behind the design and concept of RecipeRumble is based on the game called Battle Chef Brigade. The world of Battle Chef Brigade centers around chefs who using monster parts and unique flora as part of their cooking in tournaments.
 
-COOKING CONCEPT:
-- one ingredient is the main star
-- one cooking main cooking method:
-  - boiling
-  - pan-frying
-  - baking
-- kitchen level 1 seasonings:
-  - sea salt
-  - sugar
+RecipeRumble was initially thought of to be an interpretation of that concept however due to workload and resource considerations it has been scaled down to something much more simple. This project was made entirely out of java and is a product of my coding learning journey.
 
-TODO:
--  create fooditems for basic base ingredients:
-  - rice/grains, noodles,
-  - sea salt
-  - sugar
+<img src="src\main\java\com\recipeRumble\readme-assets\inspo1.jpg" alt="Battle Chef Brigade Title Screen" width="300"/>
+<img src="src\main\java\com\recipeRumble\readme-assets\inspo2.jpg" alt="Battle Chef Brigade Gameplay" width="300"/>
+<img src="src\main\java\com\recipeRumble\readme-assets\inspo3.png" alt="Battle Chef Brigade Gameplay" width="300"/>
 
-23/05/24:
--fixed removeitem bug for inventory
-- can now create a fooddish and add it to inventory
+### Usage
+#### Forking repository
+1. Clone git repository:
+```sh
+git clone https://github.com/derek-pham/RecipeRumble.git
+```
+2. Navigate to root directory:
+```sh
+cd RecipeRumble
+```
+3. Run batch script from root directory :
+```sh
+compile_and_run.bat
+```
 
-TODO:
-- reinvent game objective:
-  - you have one day to impress *insert name* by serving them breakfast lunch and dinner (3 tries)
-- add fooditems to mountains
-- allow to check inventory when deciding main ingredient OR show available options
+### [SPOILER] Ingredients
+Below are AI image interpretations of what the game ingredients might look like. 
 
+**DISCLAIMER**  Please not that the images included in this project are generated using artificial intelligence (AI). AI-generated images are for illustrative purposes only.
 
-TODOOO
-- finish off serving functionality 
-24/05/24:
-- Fairfax critiques work successfully
-- game will end if player wins
-- search resets after every meal
-- KNOWN BUGS:
-  - foodDishes dont get removed when serving them [FIXED]
-  - game doesnt end if all three attempts fail[FIXED]
+### Cherry Beet
+<img src="src\main\java\com\recipeRumble\readme-assets\cherrybeet.jpg" alt="Cherry Beet" width="300"/>
 
-last TODO: 
-- allow up to 2 for lunch and up to 3 for dinner
-  - give option to not select more dishes [FIXED]
-  - condition for no dishes left [FIXED]
-  - map out choices THEN remove from inventory [FIXED]
-  - gap between serves should be fleshed out more
+### Cucu Berry
+<img src="src\main\java\com\recipeRumble\readme-assets\cucuberry.jpg" alt="Cucu Berry" width="300"/>
+
+### Pyrus Bulb
+<img src="src\main\java\com\recipeRumble\readme-assets\pyrusbulb.jpg" alt="Pyrus Bulb" width="300"/>
+
+### Wild Carota
+<img src="src\main\java\com\recipeRumble\readme-assets\wildcarota.jpg" alt="Wild Carota" width="300"/>
