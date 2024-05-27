@@ -15,9 +15,9 @@ The inspiration behind the design and concept of RecipeRumble is based on the ga
 
 RecipeRumble was initially thought of to be an interpretation of that concept however due to workload and resource considerations it has been scaled down to something much more simple. This project was made entirely out of java and is a product of my coding learning journey.
 
-<img src="src\main\java\com\recipeRumble\readme-assets\inspo1.jpg" alt="Battle Chef Brigade Title Screen" width="400"/>
-<img src="src\main\java\com\recipeRumble\readme-assets\inspo2.jpg" alt="Battle Chef Brigade Gameplay" width="400"/>
-<img src="src\main\java\com\recipeRumble\readme-assets\inspo3.png" alt="Battle Chef Brigade Gameplay" width="400"/>
+<img src="src\main\java\com\recipeRumble\readme-assets\inspo1.jpg" alt="Battle Chef Brigade Title Screen" width="600"/>
+<img src="src\main\java\com\recipeRumble\readme-assets\inspo2.jpg" alt="Battle Chef Brigade Gameplay" width="600"/>
+<img src="src\main\java\com\recipeRumble\readme-assets\inspo3.png" alt="Battle Chef Brigade Gameplay" width="600"/>
 
 ### Usage
 #### Forking repository
